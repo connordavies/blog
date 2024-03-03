@@ -1,1 +1,1 @@
-var nextPages = ['team-yell', 'zelda-chart', 'baba-is-you', 'dragons-trap'];
+var nextPages = ['is-this-thing-on', 'team-yell', 'zelda-chart', 'baba-is-you', 'dragons-trap'];
