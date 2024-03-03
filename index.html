@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SirEdav</title>
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="js/blogpages.js"></script>
+  </head>
+
+  <body>
+      <main role="main">
+          <div class="jumbotron mt-2">
+              <div class="container">
+                  <div class="row">
+                      <div class="col">
+                          <h1 class="jumbotron-title">SirEdav</h1>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <p class="jumbotron-description">
+                              Welsh speedrunner - I play games quickly! (And sometimes slowly, too.)
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container mt-2 posts">
+              <!--<div class="row">
+                  <div class="col">
+                      <p><span class="load-more font-weight-bold">Load next article...</span></p>
+                  </div>
+              </div>-->
+          </div>
+      </main>
+      
+      <!-- Load Zooming library -->
+      <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
+      
+      <script type="text/javascript">
+          var speedrun = false;
+          //var nextPages = ['zelda-chart', 'baba-is-you', 'dragons-trap'];
+          var infScroll = $('.posts').infiniteScroll({
+              // options
+              path: function(){return "blog/" + nextPages[this.loadCount] + ".html";},
+              append: '.post',
+              history: false,
+              prefill: true
+          });
+          quickReadUpdate = function(){
+              if(speedrun){
+                  speedrunClick();
+              }
+              else{
+                  longplayClick();
+              }
+          };
+          infScroll.on('append.infiniteScroll', function(_, _,) {
+              $(".longplay-click").off("click");
+              $(".longplay-click").click(function(){longplayClick();});
+              $(".speedrun-click").click(function(){speedrunClick();});
+              quickReadUpdate();
+              zoomableUpdate();
+          });
+          longplayClick = function(){
+              $(".longplay-click").addClass("font-weight-bold");
+              $(".speedrun-click").removeClass("font-weight-bold");
+              $(".longplay").show();
+              $(".speedrun").hide();
+              speedrun = false;
+          };
+          speedrunClick = function(){
+              $(".speedrun-click").addClass("font-weight-bold");
+              $(".longplay-click").removeClass("font-weight-bold");
+              $(".speedrun").show();
+              $(".longplay").hide();
+              speedrun = true;
+          };
+          var zoomer = new Zooming({
+              bgColor: '#000',
+              scaleExtra: 1,
+              scrollThreshold: 4000
+          });
+          zoomableUpdate = function(){
+              $('.zoomable-image').off();
+              zoomer.listen('.zoomable-image');
+          };
+      </script>
+      <!--<script>
+          // Listen to images after DOM content is fully loaded
+          document.addEventListener('DOMContentLoaded', function () {
+              new Zooming({
+                  bgColor: '#000',
+                  scaleExtra: 1,
+                  scrollThreshold: 4000
+                  }).listen('.zoomable-image')
+          });
+      </script>-->
+  </body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SirEdav</title>
+    
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+      <main role="main">
+          <div class="jumbotron mt-2">
+            <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h1 class="jumbotron-title">SirEdav</h1>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <p class="jumbotron-description">
+                          Welsh speedrunner - I play games quickly! (And sometimes slowly, too.)
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="container mt-2">
+          <div class="row">
+              <div class="back col">
+                  <p><a href="/index.html">← Back to main page</a></p>
+              </div>
+          </div>
+          <script type="text/javascript">
+              longplayClick = function(){
+                  $(".longplay-click").addClass("font-weight-bold");
+                  $(".speedrun-click").removeClass("font-weight-bold");
+                  $(".longplay").show();
+                  $(".speedrun").hide();
+                  speedrun = false;
+              };
+              speedrunClick = function(){
+                  $(".speedrun-click").addClass("font-weight-bold");
+                  $(".longplay-click").removeClass("font-weight-bold");
+                  $(".speedrun").show();
+                  $(".longplay").hide();
+                  speedrun = true;
+              };
+              $(document).ready(function(){
+                  $(".longplay-click").click(function(){longplayClick();});
+                  $(".speedrun-click").click(function(){speedrunClick();});
+              });
+          </script>
+          <div class="post" id="dragons-trap">
+              <div class="row">
+                  <div class="post-title col">
+                      <h2>What can Wonder Boy tell us about Streets of Rage 4?</h2>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="post-description col">
+                      <p>This is the first post in a series that looks in-depth at the previous work of developers of the upcoming <span class="font-italic">Streets of Rage 4</span>.</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="post-timestamp col">
+                      <p><a href="/blog/dragons-trap.html">30th January 2020</a> | Share: <a href="https://www.facebook.com/sharer/sharer.php?text=What+can+Wonder+Boy+tell+us+about+Streets+of+Rage+4%3F&amp;u=https%3A%2F%2Fwww.siredav.co.uk%2Fblog%2Fdragons-trap.html">Facebook</a> · <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.siredav.co.uk%2Fblog%2Fdragons-trap.html&amp;text=What+can+Wonder+Boy+tell+us+about+Streets+of+Rage+4%3F">Twitter</a></p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="post-image d-none d-md-block col-md-6">
+                      <img class="img-fluid breaker-image" src="/images/dragonstrap2.png"/>
+                  </div>
+                  <div class="post-image d-none d-md-block col-md-6">
+                      <img class="img-fluid breaker-image" src="/images/streetsofrage4.png"/>
+                  </div>
+                  <div class="post-image col-xs-12 d-md-none">
+                      <img class="img-fluid breaker-image" src="/images/trap rage.png"/>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <p><span class="longplay-click font-weight-bold">Longplay (2000 words / 8 minute read)</span> | <span class="speedrun-click">Speedrun (500 words / 2 minute read)</span></p>
+                  </div>
+              </div>
+              <div class="longplay">
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              Hello again. SirEdav here! <span class="font-italic">Streets of Rage 3</span> is 26 years old, and this year we're finally getting an official sequel! <span class="font-italic">Streets of Rage</span> is the classic Sega side-scrolling beat-em-up series from the 90s, with a killer EDM soundtrack from Yuzo Koshiro and Motohiro Kawashima, widely regarded as some of the most influential innovators in chiptune and video game music of the 16-bit era! (Excitingly, they're both returning to work on the sequel.) <span class="font-italic">Streets of Rage 4</span> was first announced in 2018, and will be released on Nintendo Switch, PS4, Xbox One, and PC. It's being developed by Lizardcube, Guard Crush Games, and Dotemu.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              Recently, I've spent a bit of time delving into other games from <span class="font-italic">Streets of Rage 4</span>'s developers, to try to get a good feeling for what to expect from the upcoming game. Lizardcube and Dotemu previously came together to develop and publish the <span class="font-italic">Wonder Boy: The Dragon's Trap</span> remake that came out in 2017. Fittingly, it was released 28 years after the game it was based on. It's almost spooky how well that matches up with <span class="font-italic">Streets of Rage</span>'s 26 year gap! Let's jump straight in...
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>A Master System classic</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The original game, <span class="font-italic">Wonder Boy III: The Dragon's Trap</span>, was a much-celebrated platformer and action-adventure game first released on the Master System, in 1989. (You could describe it as an early Metroidvania.) The overworld is a big interconnected map with dungeons dotted about. And with every dragon boss that you defeat, you're forced to assume a new animal form, each of which has its own strengths, weaknesses and abilities. In this way, you unlock new parts of the map to explore as you progress through the various animal transformations. There are also roleplaying elements - for example, you can buy weapon and armour upgrades at shops, if you have enough gold and enough charm points, which are a sort of numerical abstraction for charisma. (Out of the animal transformations, the scary-looking Lizard-Man starts with the lowest charm points, and the lovable Lion-Man starts with the highest. So shopkeepers are more amenable to selling rare goods to Lion-Man than to Lizard-Man.)
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col-xs-12 col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/wonder boy 1.jpg"/>
+                      </div>
+                      <div class="post-image d-none d-md-block col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/wonder boy 2.jpg"/>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>The feel of the original</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The developers of the remake went to painstaking lengths to reproduce the feel of the original title - in particular its physics system. They started by completely disassembling the Master System classic, and taking the original code apart. Omar Cornut, Technical Director at Lizardcube, had previously worked on a Master System emulator and debugger, called <span class="font-italic">MEKA</span>, no doubt named after the MEKA Dragon boss that shows up at the start of <span class="font-italic">Dragon's Trap</span>, a recurring enemy in the <span class="font-italic">Wonder Boy</span> series who lays the titular trap on the game's protagonist! The emulator's roots go all the way back to 1999, and Cornut had carried the idea of a fan remake of <span class="font-italic">Dragon's Trap</span> around with him for years.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Beautiful hand-drawn animations</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The other half of Lizardcube is artist Ben Fiquet. The traditional hand-drawn illustrations brought to life in the remake really are beautiful. To say that the game has been given a fresh lick of paint is really to understate the change. The characters are full of life and the watercolour-style background scenes are charming but never distracting. Fiquet's style is in part influenced by manga artists such as <span class="font-italic">Dragon Ball</span> creator Akira Toriyama.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              <span class="font-italic">Dragon's Trap</span> allows the player to switch instantly between the original 1989 graphics and Fiquet's beautiful updated artwork, in-game, at the touch of a button. The ability to switch between old and new wasn't originally intended - the story goes that Ben Fiquet was given a way to upload his new assets into the game on top of the old graphics in real time, so that he could see how they would appear. When Dotemu saw that functionality, they thought it was so cool that they insisted that the final product allow the player to switch between retro and updated graphics as well! In fairness, the game feels much more complete for it. An interesting side-effect of this approach is that the game, though using new artwork, is tied to the old physics system. This actually seems to have been a sensible restriction, as it helps afford an authenticity to the gameplay feel of the remake. At the same time, the updated animation style really helps the player to intuit the old physics of the game, which I think it's fair to say could otherwise betray the game's age. The two marry up perfectly.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col">
+                          <img class="img-fluid" src="/images/dragonstrap1.png"/>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Bigger picture</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The remake plays in widescreen. Because of this, the player has more time to deal with oncoming enemies and obstacles. Having played both the original and the remake recently, I feel this change represents a toning down of the difficulty of the original, which was as famously unforgiving as many of its contemporaries. The corridors never feel as claustrophobic as they did in the 1989 version of the game - players of the remake never have to be quite so cautious. As if to compensate, the remake comes with a harder difficulty setting, which introduces two additional pallet-swapped enemy types on top of the standard red (easy), green (medium) and blue (hard). More play options are always welcome of course, though this harder difficulty setting comes across as a bit of an afterthought. The change to widescreen occasionally falls at odds with the decision to stick rigidly to the original level designs. For example, the final dungeon - minor spoiler alert! - has a very ominous-looking door just before the final boss. It's perfectly centered in the original, and takes up the entire screen. But because of the change in aspect ratio, the door and its decorations only take up two thirds of the screen in the remake, and so are awkwardly positioned to the right of the frame. (Yes, I'll put my hands up, this is a real nitpick! And I've chosen to pick on the most egregious example in the entire game.) I completely understand that the remake had to take full advantage of the screen real estate available on modern systems, but I wonder if, in a couple of places, that could have been accounted for by pinching in the level design just a little bit, making little tweaks here and there. The remake could have found new ways to emulate the crowded corridors of the original enemy-laiden dungeons, and shifted some tiles around to maintain the atmosphere of a number of set pieces.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col-xs-12 col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/dragonstrapdoor2.PNG"/>
+                      </div>
+                      <div class="post-image col-xs-12 col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/dragonstrapdoor1.PNG"/>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Charmed, I'm sure</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The charm mechanic saw the biggest overhaul from original to remake. Originally, shopkeepers would only sell their best items to the most dashing prospective buyers. The player was able to put on the charm in a number of ways - by dressing up in nicer armour, by showing up to shops in more charismatic animal forms, and by collecting charm stones dropped by the occasional enemy upon defeat. So, there's the Goblin Mail: a great piece of early game armour, but it's also ugly as sin, so wearing it reduces the player's charm points. And, Lion-Man and Mouse-Man are more charming than Lizard-Man and Piranha-Man. Anecdotally, it seems that tougher (blue) enemies are more likely to drop charm stones than easier (red or green) enemies. Since some blue enemies, like crabs, retain the simple patterns and behaviours of their red and green counterparts, only having more health, there are certain spots in the game that naturally seem to make better places to collect charm stones. All in all, it's a pretty complex system that weaves together a lot of game mechanics that are otherwise separate. Unfortunately, it's also an imperfect system. Unless the player stops to grind charm stones at certain points during the game, their charm level won't rise as quickly as it needs to, and they'll end up getting locked into using lower-level weapons and armour. This is especially likely during the portion of the game after being transformed from Mouse-Man into Piranha-Man, who has much lower base charm. And, there is a knock-on effect on other systems in the original game: because you tend to end up carrying weaker weapons, and the boss dragons simply repeat the same patterns of behaviour over and over, they take longer to defeat. A longer battle due to less potent weaponry isn't more difficult; it's just more repetitive. So there were definitely kinks in the old charm system that needed to be worked out.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The remake tackles this problem by, for the most part, just getting rid of the system. There are no more random charm stone drops. There's no longer any downside to using the Goblin Mail. And with just one exception, shopkeepers will now sell any item to any patron. And, to me, this oversimplification is a bit of a disappointment. Yes, the old system was inadequately explained, and poorly implemented. But there were some great ideas that could have been refined and built upon. Instead, you now generally end up carrying all the best weapons and armour, and some of the depth of the original game is sacrificed for the sake of making the play experience a little smoother.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The idea of charm wasn't dropped entirely. There are six new secret areas in the remake. Each culminates in the player receiving a charm stone. And four out of the six charm stones must be obtained in order to buy the strongest weapon in the game, which is the only item that is gated in such a way. So, this is the "updated" system. My opinion of the new charm system aside, I will say, it's fun to see new content injected into a 30 year old game, in the form of these new secret areas. They are mostly pretty short, off the beaten track, and contain tougher enemies and some platforming that is much more difficult (edging towards frustrating, even) compared to that found in the rest of the game. Due to the fact that the only thing gated by these additional areas is said strongest weapon, venturing into "The Unknown" (as these areas are called in-game) is completely optional.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Some last thoughts</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              In summary, this is a remake pulled together out of pure admiration for the original, which is always a good starting place! It is a mixed bag, though I've more positive things to say about it than negative. The art style is beautiful. The physics feels just like the old game - for better or worse. The level design is straight from the old game - again, for better or worse! Playing in widescreen gives the game a different feel, and makes it considerably easier. I love that you can switch between the retro and updated graphics on the fly, and similarly between three different audio settings - original, original with FM (the Master System's Japan-only enhanced music chip), and the newly reorchestrated soundtrack. I'm not fussed on the new charm system, but to be honest, I wasn't fussed on the old charm system either! (I wonder if there could have been a middle ground where charm stone farming might have remained in the game, but the actual requirements at shops could have been toned down a touch?) All in all, <span class="font-italic">Dragon's Trap</span> is a great little remake, and knowing that Ben Fiquet is continuing as art director for <span class="font-italic">Streets of Rage 4</span>, and that Omar Cornut's technical expertise will be on hand as well, makes me quite excited for the whole thing!
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="speedrun" style="display: none;">
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              26 years on, and we're finally getting a sequel! <span class="font-italic">Streets of Rage 4</span> is coming to Switch, PS4, Xbox One and PC this year, courtesy of Lizardcube, Dotemu, and Guard Crush Games. Lizardcube and Dotemu worked together before on the 2017 remake of <span class="font-italic">Wonder Boy III: The Dragon's Trap</span>, a beloved 1989 Master System platform adventure game with role-playing elements. So, I decided to play both the original <span class="font-italic">Dragon's Trap</span> and its updated version to try and get a good feel for Lizardcube and Dotemu's approach to revisiting and updating old classics!
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Meet the team</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The remake entirely lifts the physics system from the original, since (I understand) it uses the Master System game's code as a starting point. Omar Cornut is the technical director at Lizardcube, and he previously worked on a Master System emulator and debugger called <span class="font-italic">MEKA</span>, named after one of the <span class="font-italic">Wonder Boy</span> series' recurring bosses!
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The art director for <span class="font-italic">Streets of Rage 4</span>, Ben Fiquet, also worked on the <span class="font-italic">Dragon's Trap</span> remake. His style comprises beautiful hand-drawn animations, watercolour backgrounds, and characters that are, well, full of character! The player can switch between the original retro graphics and Ben's new artwork at the press of a button. It's a really clever touch and one that pays respect to the original game.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Ch-ch-ch-changes</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The remake plays in widescreen. While it's sensible to take advantage of the bigger screens of modern gaming systems, this has the unfortunate side effect of taking the edge off the game's dungeons, which don't feel as crowded and scary as they did in the original, since the player can see further ahead.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The original game used a complex charm system in conjunction with its shops. Shopkeepers sell the player rarer items if the player is wearing flashier armour, if they turn up as a more charismatic character, or if they collect charm stones occasionally dropped by defeated enemies. This is a great idea, but it doesn't scale well further into the game, so the player has to spend time grinding charm stone drops if they want to buy better items. Unfortunately, instead of fixing this little problem, the remake just throws out the old system instead. There are no more random charm stone drops, and with the exception of a single shop, all shopkeepers will sell any of their items, all of the time. This does feel like a missed opportunity, and robs the remake of a bit of depth (and difficulty).
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              There are six new secret areas. These zones are much tougher than anything in the main game, so they're placed out of the way and positioned as optional extra challenges. Though they're quite short, it's nice to see the old game injected with some brand new content. Completing four out of these six areas grants the player access to a powerful weapon.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>In summary</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              All in all, this is a game borne out of love for the original. The new art style is beautiful. Very little has changed about the physics system or the levels themselves - and I think this is out of respect. That said, playing in widescreen makes the game quite a bit easier, as does stripping out the old charm system, as very little now stands in the way of the player running amok with powerful gear. But at the end of the day, <span class="font-italic">Dragon's Trap</span> is a fun little remake and knowing that technical director Omar Cornut and art director Ben Fiquet are sticking around for <span class="font-italic">Streets of Rage 4</span> makes me quite excited!
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="post-heading col">
+                      <h4>Sources / Further reading</h4>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="post-body col">
+                      <p>
+                          <a href="https://www.lizardcube.com">Lizardcube website (includes press kits and factsheets for Streets of Rage 4 and for Dragon's Trap)</a><br>
+                          <a href="https://www.reddit.com/r/NintendoSwitch/comments/67979l/we_are_lizardcube_dotemu_developers_of_wonder_boy/">Lizardcube and Dotemu Reddit AMA</a><br>
+                          <a href="https://www.smspower.org/meka/">Project site for MEKA</a><br>
+                          <a href="https://www.thedragonstrap.com/blog/">Wonder Boy: The Dragon's Trap development blog</a><br>
+                          <a href="https://artsideoflife.com/ben-fiquet/">"Art Side of Life" interview with Ben Fiquet</a><br>
+                          <a href="https://www.youtube.com/watch?v=6nL8rEjhqIk">2018 GDC talk - The Art of Wonder Boy: The Dragon's Trap</a><br>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </main>
+  </body>
+</html>

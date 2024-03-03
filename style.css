@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Super-Legend-Boy";
+  src: url("./fonts/SuperLegendBoy-4w8Y.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SuperLegendBoy-4w8Y.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SuperLegendBoy-4w8Y.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SuperLegendBoy-4w8Y.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SuperLegendBoy-4w8Y.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SuperLegendBoy-4w8Y.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SuperLegendBoy-4w8Y.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+.post-image{
+    text-align: center;
+    background: lightblue;
+    margin-bottom: 10px;
+    position: relative;
+}
+.breaker-image{
+    height: 300px;
+    object-fit: contain;
+}
+.jumbotron{
+    background: lightblue;
+    border-radius: 0;
+}
+.post-title, .post-heading, .jumbotron-title, .retro{
+    font-family: 'Super-Legend-Boy', sans-serif;
+}
+.post-heading{
+    margin-top: 10px;
+}
+.post-body, .post-description, .jumbotron-description{
+    font-family: 'Open Sans', sans-serif;;
+}
+.post{
+    padding: 20px 15px;
+    margin: 0px -15px;
+}
+.speedrun-click, .longplay-click{
+    color: #007bff;
+    cursor: pointer;
+}
+.speedrun-click:hover, .longplay-click:hover{
+    text-decoration: underline;
+}
+.modal-dialog{
+    max-width: 1800px !important;
+}
+.btn{
+    margin-bottom: 10px;
+}
+.scrolling-container{
+    overflow-x: auto;
+    overflow-y: hidden;
+    transform: scaleY(-1);
+}
+.scrolling-image{
+    max-width: 1700px;
+    transform: scaleY(-1);
+}
+.post:nth-child(2n){
+    background: #dff0ff;
+}
+.top-left{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background: lightgoldenrodyellow;
+    opacity: 0.75;
+}

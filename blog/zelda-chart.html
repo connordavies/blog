@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SirEdav</title>
+    
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+  </head>
+
+  <body>
+      <main role="main">
+          <div class="jumbotron mt-2">
+            <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h1 class="jumbotron-title">SirEdav</h1>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <p class="jumbotron-description">
+                          Welsh speedrunner - I play games quickly! (And sometimes slowly, too.)
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="container mt-2">
+          <div class="row">
+              <div class="back col">
+                  <p><a href="/index.html">← Back to main page</a></p>
+              </div>
+          </div>
+          <script type="text/javascript">
+              longplayClick = function(){
+                  $(".longplay-click").addClass("font-weight-bold");
+                  $(".speedrun-click").removeClass("font-weight-bold");
+                  $(".longplay").show();
+                  $(".speedrun").hide();
+                  speedrun = false;
+              };
+              speedrunClick = function(){
+                  $(".speedrun-click").addClass("font-weight-bold");
+                  $(".longplay-click").removeClass("font-weight-bold");
+                  $(".speedrun").show();
+                  $(".longplay").hide();
+                  speedrun = true;
+              };
+              $(document).ready(function(){
+                  $(".longplay-click").click(function(){longplayClick();});
+                  $(".speedrun-click").click(function(){speedrunClick();});
+              });
+          </script>
+          
+          <!-- Load Zooming library -->
+          <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
+          <script>
+              // Listen to images after DOM content is fully loaded
+              document.addEventListener('DOMContentLoaded', function () {
+                  new Zooming({
+                      bgColor: '#000',
+                      scaleExtra: 1,
+                      scrollThreshold: 4000
+                      }).listen('.zoomable-image')
+                  
+              });
+          </script>
+          <div class="post" id="zelda-chart">
+              <div class="row">
+                  <div class="post-title col">
+                      <h2>Goldilocks and the Three Zelda Games</h2>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="post-description col">
+                    <p>This <span class="font-italic">Zelda</span> game is too open! This <span class="font-italic">Zelda</span> game is too linear! But this <span class="font-italic">Zelda</span> game is just right.</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="post-timestamp col">
+                      <p><a href="/blog/zelda-chart.html">24th February 2020</a> | Share: <a href="https://www.facebook.com/sharer/sharer.php?text=Goldilocks+and+the+Three+Zelda+Games&amp;u=https%3A%2F%2Fwww.siredav.co.uk%2Fblog%2Fzelda-chart.html">Facebook</a> · <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.siredav.co.uk%2Fblog%2Fzelda-chart.html&amp;text=Goldilocks+and+the+Three+Zelda+Games">Twitter</a></p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="post-image col-xs-12 col-md-6">
+                      <img class="img-fluid breaker-image" src="/images/zelda logo.png"/>
+                  </div>
+                  <div class="post-image d-none d-md-block col-md-6">
+                      <img class="img-fluid breaker-image" src="/images/zelda links.png"/>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <p><span class="longplay-click font-weight-bold">Longplay (1500 words / 6 minute read)</span> | <span class="speedrun-click">Speedrun (500 words / 2 minute read)</span></p>
+                  </div>
+              </div>
+              <div class="longplay">
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              Hello again. SirEdav here! I don't know if this is generally agreed upon, but it seems to me that there are two main types of <span class="font-italic">Zelda</span> game. On the one side, you have games that are narratively simple, but have a large number of ways to play through the game. (These are your <span class="font-italic">Legend of Zelda</span>s and your <span class="font-italic">Breath of the Wild</span>s.) And on the other, you have games that are more ambitious from a storytelling perspective, but are much more linear in terms of routing through the game. (These are your <span class="font-italic">Twilight Princess</span>es and your <span class="font-italic">Skyward Sword</span>s.) And, when you stop and think about it, this makes a lot of sense: when, as a game designer, you have a clear narrative vision that you want to convey in terms of A then B then C, then you probably want the player to take on the game's experiences in a very specific order. And conversely, if you want to afford the player the freedom to play a game in any order they like, then it's more difficult to, at the same time, tell an involved and cohesive story.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              To illustrate this sliding scale of narrative complexity versus ways to play through the game, I'm going to compare progression charts for three different <span class="font-italic">Zelda</span> titles. They are: <span class="font-italic">The Legend of Zelda</span>, <span class="font-italic">Twilight Princess</span>, and <span class="font-italic">Ocarina of Time</span>. And the reason I've singled out those three games specifically, is that, superficially, they seem to be structured very similarly. Pick any one of the three, and the following is true: there are three easier dungeons, five tougher dungeons, then one final dungeon.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>The Legend of Zelda</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col-xs-12 col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/loz logo.png"/>
+                      </div>
+                      <div class="post-image d-none d-md-block col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/loz hyrule.png"/>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              <span class="font-italic">The Legend of Zelda</span> is the 1986 classic that started it all. The development team worked on <span class="font-italic">Zelda</span> and <span class="font-italic">Super Mario Bros.</span> at the same time, and so when <span class="font-italic">Mario</span> became a linear experience with set sequences of actions, they strived to distinguish <span class="font-italic">Zelda</span> from it, by making it as non-linear as they could, and forcing the player to think about where to go, and what to do. The game's progression chart (below) helps to illustrate this idea.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              Starting from the top, as soon as you start a new save file, you can carry out any of the tasks in green at the top of the chart! A task that is connected to one above it, has that task as a prerequisite. So, in order to find Level 4, for example, you first need to find Level 3 so that you can get the raft. (Level 4 is on an island, and to reach the island you need said raft.)
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col">
+                          <img class="img-fluid zoomable-image" src="/images/legend of zelda progression new small.png" data-original="/images/legend of zelda progression new.png"/>
+                          <p class="top-left">Click/tap to zoom</p>
+                      </div>
+                  </div>
+                  <!--<div class="row">
+                      <div class="post-body col">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lozModal">See full progression chart</button>
+                          <div class="modal fade" id="lozModal" tabindex="-1" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title post-heading" id="lozModalLabel">Legend of Zelda Progression Chart</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <p>Starting from the top, as soon as you start a new save file, you can carry out ANY of the tasks in green at the top of the chart! A task that is connected to one above it, has that task as a prerequisite. So, in order to Find Level 4, for example, you first need to Find Level 3 so that you can Get the Raft. (Level 4 is on an island, and to reach the island you need said raft.)</p>
+                                          <div class="scrolling-container">
+                                              <img class="img-fluid scrolling-image" src="/images/legend of zelda progression new.png"/>
+                                          </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>-->
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              It's clear that the game is incredibly open and that ultimately, the developers were successful in their endeavour to make this a more non-linear experience than <span class="font-italic">Mario</span>. Without setting foot in any other dungeon, you, the player, can choose to take on any of Levels 1, 2, or 3, in their entirety. If you were feeling particularly crazy, you could even buy a candle from an overworld shop, use it to burn a suspiciously placed bush, and go straight down into Level 8! (Though that is, at the very least, ill-advised, without first obtaining additional Heart Containers and better weapons. The fact that this dungeon is much tougher is implied by the slightly increased number of steps required to access it, as well as, of course, the fact that it's called Level 8!)
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The story is sparsely told. It can be broken down in one sentence: You, Link, must collect the eight pieces of the Triforce, so that you can prove yourself worthy to take on Ganon and rescue Princess Zelda. This narrative is front-loaded in the form of rolling text at the start of the game, is resolved at the very end, and there are no twists or turns in the middle. And really, this is what allows the game to be so non-linear - the story doesn't care in which order you collect the eight pieces of the Triforce.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              This open system is a double-edged sword. The game feels enormous when you're dropped into it, because you're allowed to do whatever you want, and to go wherever you want. This is the freedom that the recent <span class="font-italic">Breath of the Wild</span> wanted to recapture (and it largely succeeded). But, at the same time, there's an aimless feel to proceedings as you explore Hyrule, because it doesn't often feel like meaningful progress is being made. The liberty to proceed however the player sees fit means that there is very little direction given in-game, which risks coming across as indifference, and can therefore be frustrating for the player. Although some gamers would say that there is too much hand-holding in many modern games (and this argument is often levelled at Nintendo in particular), there is nevertheless an immediate sense of satisfaction when a game tells you to do something, and you successfully do it. (And then move onto the next thing!)
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Twilight Princess</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col-xs-12 col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/twilight princess 2.png"/>
+                      </div>
+                      <div class="post-image d-none d-md-block col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/twilight princess 1.png"/>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              So, let's compare and contrast with <span class="font-italic">Twilight Princess</span>, the thirteenth installment in the <span class="font-italic">Zelda</span> series. By 2006, <span class="font-italic">Zelda</span> was very much established! It's fantasy action-adventure, split into overworld and dungeons, each game featuring incarnations of Link, and usually also Zelda and the evil king Ganon too. <span class="font-italic">Twilight Princess</span> doesn't deviate too far from the classic formula in this regard, but it has its own story to tell, and narratively, as you might expect, it's a much more complex beast than the original <span class="font-italic">Legend of Zelda</span>.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              Besides Link, Zelda, and Ganon, there is an entire cast of supporting characters this time around - not least of all, the titular Twilight Princess, Midna; the mad usurper king Zant; and a group of vigilantes called the Resistance, who are based in Hyrule Castle Town. Fused Shadows, corrupted magical essences used in an ancient war, must be collected in order to first confront Zant. When that approach fails, shards of a cursed mirror must be reassembled to allow the hero to travel to the Twilight Realm. And, in a late twist, Ganon, the king of evil, is revealed to have been pulling the strings behind the entire episode (gasp!), and must be vanquished as well.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              Pictured below is what this complex narrative looks like on a progression chart. The game's dungeons can only be tackled in the given order. This isn't much of an issue on your first playthrough of the game, but it might temper your enthusiasm to go back for a second one.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col-xs-12 col-md-3">
+                          <img class="img-fluid breaker-image" src="/images/twilight princess progression gif.gif"/>
+                      </div>
+                      <div class="post-image col-xs-12 col-md-9">
+                          <img class="img-fluid breaker-image zoomable-image" src="/images/twilight princess progression small.png" data-original="/images/twilight princess progression.png"/>
+                          <p class="top-left">Click/tap to zoom</p>
+                      </div>
+                  </div>
+                  <!--<div class="row">
+                      <div class="post-body col">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tpModal">See full progression chart</button>
+                          <div class="modal fade" id="tpModal" tabindex="-1" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title post-heading" id="tpModalLabel">Twilight Princess Progression Chart</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <p>The game's dungeons can only be tackled in the order below. This isn't much of an issue on your first playthrough of the game, but it might temper your enthusiasm to go back for a second one.</p>
+                                          <div class="scrolling-container">
+                                              <img class="img-fluid scrolling-image" src="/images/twilight princess progression.png"/>
+                                          </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>-->
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              So, I think it's worth pointing out, first of all, that this game is critically acclaimed, and that, until <span class="font-italic">Breath of the Wild</span> came out, <span class="font-italic">Twilight Princess</span> was the bestselling <span class="font-italic">Zelda</span> game of all time. That said, when the game's progression is presented in this way, it's clear that the player has very little agency. You have to play through the story in precisely the order that was intended. And, it's a great story! But clearly, it's very rigid.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              I love the <span class="font-italic">Zelda</span> series, and <span class="font-italic">Twilight Princess</span> is not a bad game by any stretch of the imagination. But, there are some days where I'll think about starting a new save file and picking the game up from scratch, and I'll stop myself when I remember the horrors of having to play for an entire hour of wrangling goats and catching fish and coaxing cats and all the rest that has to happen before you're even allowed out of the first village and trusted to take on the first dungeon. This first hour is, I feel, <span class="font-italic">Twilight Princess</span> at its weakest. (And perhaps it's not solely down to the progression structure of the game. Maybe if the game just let you leave Ordon that little bit quicker, it would feel more accessible to replay. Other games in the series suffer in a similar fashion. <span class="font-italic">Majora's Mask</span>, for the masterpiece that it is, definitely springs to mind, with the slow trudge of those first three days in Clock Town before the player can move on to Termina proper! But, I digress...)
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Ocarina of Time</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col-xs-12 col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/ocarina of time 2.png"/>
+                      </div>
+                      <div class="post-image d-none d-md-block col-md-6">
+                          <img class="img-fluid breaker-image" src="/images/ocarina of time 1.png"/>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              Maybe at this point you're thinking, there must surely be some perfect middle ground between <span class="font-italic">The Legend of Zelda</span>'s open gameplay, and <span class="font-italic">Twilight Princess</span>'s focus on telling a good story? Enter: <span class="font-italic">Ocarina of Time</span>.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              It's a game that needs no introduction. Here's one anyway: released in 1998, <span class="font-italic">Ocarina of Time</span> is the highest-rated game on Metacritic, and is widely cited as one of the greatest video games of all time. You'll get no argument from me! But what makes it so great? There are dozens of angles you could approach this question from, but given that we're discussing narrative complexity and non-linear gameplay, let's jump straight to the progression chart. Here, solid arrows denote prerequisite tasks, like those in the previous progression charts. Dotted arrows represent paths where one of two tasks must be carried out.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col">
+                          <img class="img-fluid zoomable-image" src="/images/ocarina of time progression small.png" data-original="/images/ocarina of time progression.png"/>
+                          <p class="top-left">Click/tap to zoom</p>
+                      </div>
+                  </div>
+                  <!--<div class="row">
+                      <div class="post-body col">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ootModal">See full progression chart</button>
+                          <div class="modal fade" id="ootModal" tabindex="-1" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title post-heading" id="ootModalLabel">Ocarina of Time Progression Chart</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <p>Solid arrows denote prerequisite tasks, like those in the previous progression charts. Dotted arrows represent paths where one of two tasks must be carried out. For example, in order to Rescue Carpenters, you must either Get Epona or Get Longshot.</p>
+                                          <div class="scrolling-container">
+                                              <img class="img-fluid scrolling-image" src="/images/ocarina of time progression.png"/>
+                                          </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>-->
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              (You'll notice that I had to get a bit more informal with my arrows this time, because there are a lot of twists and turns, mainly in the middle of the game. As evidenced by the many dotted arrows, often a node will have two possible solutions - you can either jump over a broken bridge on your horse, or you can use the longshot to pull yourself across, for example. These dual solutions usually occur later in the game, and I think they're there to give some weight and validation to a player's earlier decisions. Maybe I'll write more about this at a later date...)
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              Now this chart is a thing of beauty! It gets pinched in at important story beats so as to weave a coherent and compelling tale. And, after the player gets a little bit more confident, the graph gets much more open, affording the more experienced player the freedom to carry out certain groups of tasks in whatever order they feel like. The end result is a story that is narratively complex, though perhaps not as much as <span class="font-italic">Twilight Princess</span>, and a game that is fairly non-linear and can be replayed in a number of different ways, though it is, admittedly, more fixed than <span class="font-italic">The Legend of Zelda</span>. <span class="font-italic">Ocarina of Time</span> is my favourite <span class="font-italic">Zelda</span> game, and I think that this chart, especially when compared with charts for other games in the series, goes a long way towards explaining why.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="speedrun" style="display: none;">
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              <span class="font-italic">Zelda</span> games tend to come in two flavours. Each game in the series either presents a simple story that allows the player to take on dungeons in whatever order they like, or a more intricate story that comes with a much stricter order in which things must be tackled.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>The Legend of Zelda</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The original game was very open, as it was intended to contrast against <span class="font-italic">Super Mario Bros.</span>, which was worked on concurrently. And as might be expected, its narrative is very simple: you must collect the eight pieces of the Triforce to prove yourself worthy to take on Ganon and rescue Princess Zelda. It could be argued that the reason it can be so non-linear is that the story isn't too involved.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col">
+                          <img class="img-fluid zoomable-image" src="/images/legend of zelda progression new small.png" data-original="/images/legend of zelda progression new.png"/>
+                          <p class="top-left">Click/tap to zoom</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Twilight Princess</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              Twenty years later, the <span class="font-italic">Zelda</span> series was very much established, and <span class="font-italic">Twilight Princess</span> had just been released. It's a much more involved story, with many twists and turns. However, its nine dungeons must be completed in a prescribed sequence. While it's a great game, I feel that the strict ordering of gameplay harms <span class="font-italic">Twilight Princess</span>'s replayability: it's the same game every time you play.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col-xs-12 col-md-3">
+                          <img class="img-fluid breaker-image" src="/images/twilight princess progression gif.gif"/>
+                      </div>
+                      <div class="post-image col-xs-12 col-md-9">
+                          <img class="img-fluid breaker-image zoomable-image" src="/images/twilight princess progression small.png" data-original="/images/twilight princess progression.png"/>
+                          <p class="top-left">Click/tap to zoom</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-heading col">
+                          <h4>Ocarina of Time</h4>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-body col">
+                          <p>
+                              The perfect middle ground, in my opinion, is <span class="font-italic">Ocarina of Time</span>. (And, fittingly, it was released a little more than ten years after the original, and about ten years before <span class="font-italic">Twilight Princess</span>!) From a gameplay perspective, it starts simply, so as not to overwhelm the player, but during this time there's a lot of story and backstory to cover. Then, later in the game, possibilities for the player open up, and the narrative takes more of a backseat, though there's still important character development throughout. It's the perfect compromise, between <span class="font-italic">The Legend of Zelda</span>'s non-linear gameplay, and <span class="font-italic">Twilight Princess</span>'s epic story.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="post-image col">
+                          <img class="img-fluid zoomable-image" src="/images/ocarina of time progression small.png" data-original="/images/ocarina of time progression.png"/>
+                          <p class="top-left">Click/tap to zoom</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </main>
+  </body>
+</html>
